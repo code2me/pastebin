@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.comingsoon {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: grid;
+    place-items: center;
+    margin: 40% 10% 40% 10%;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+title::before {
+    filter: blur(10px);
+    z-index: -1;
+    box-shadow: inset 0 0 0 50vw rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 3rem;
+    overflow-wrap: break-word;
+}
+
+.typing-demo {
+    width: 17.5ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid;
+    font-size: 1.5rem;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.copy {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+}
